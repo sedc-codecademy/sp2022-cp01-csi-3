@@ -20,6 +20,7 @@ function App() {
 				Link for React DOCS
         	</a>
       	</header>
+		<Footer></Footer>
     </div>
   );
 }
