@@ -4,7 +4,7 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './components/UI/Header/Header';
 import Footer from './components/UI/Footer/Footer';
-import { Home } from '@material-ui/icons';
+import Home from './components/UI/Home/Home';
 import Profile from './components/UI/Profile/Profile';
 import SignUp from './components/UI/SignUp/SignUp';
 import LogIn from './components/UI/LogIn/LogIn';
