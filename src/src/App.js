@@ -11,6 +11,7 @@ import LogIn from './components/UI/LogIn/LogIn';
 import About from './components/UI/About/About';
 import TermsOfService from './components/UI/TermsOfService/TermsOfService';
 import NotFound404 from './components/UI/NotFound404/NotFound404';
+import TradingChart from './components/UI/TradingChart/TradingChart';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
 				<Route path='/sign-up' element={<SignUp />} />
 				<Route path='/about' element={<About />} />
 				<Route path='/terms-of-service' element={<TermsOfService />} />
+				  <Route path='/trading-chart' element={<TradingChart />}></Route>
 				<Route path='*' element={<NotFound404 />} />
 			</Routes>
 		</BrowserRouter>
