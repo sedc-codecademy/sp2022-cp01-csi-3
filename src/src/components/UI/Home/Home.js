@@ -16,7 +16,7 @@ const Home = () => (
 			<Grid item xs={10}>
 				<CryptoTable></CryptoTable>
 			</Grid>
-		</Grid>
+		</Grid> 
   </div>
 );
 
