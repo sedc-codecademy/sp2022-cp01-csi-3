@@ -26,7 +26,7 @@ function App() {
 				<Route path='/sign-up' element={<SignUp />} />
 				<Route path='/about' element={<About />} />
 				<Route path='/terms-of-service' element={<TermsOfService />} />
-				  <Route path='/trading-chart' element={<TradingChart />}></Route>
+				<Route path='/trading-chart' element={<TradingChart />} />
 				<Route path='*' element={<NotFound404 />} />
 			</Routes>
 		</BrowserRouter>
