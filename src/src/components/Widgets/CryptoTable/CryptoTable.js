@@ -18,7 +18,7 @@ export default class CryptoTable extends React.Component {
 	}
 
 	async componentDidMount() {
-		const response = await fetch(environment.coinGeckoBaseURL + "/coins/markets?vs_currency=USD");	 
+		const response = await fetch(environment.coinGeckoBaseURL + "coins/markets?vs_currency=USD");	 
 		const data = await response.json();
 
 		this.setState({coins: data});
@@ -27,7 +27,6 @@ export default class CryptoTable extends React.Component {
 			rows.push(item)
 		});
 
-		console.log(rows);
 		this.state.loading = false;
 	}
 

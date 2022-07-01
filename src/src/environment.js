@@ -1,3 +1,3 @@
 export const environment = {
-	coinGeckoBaseURL: "api.coingecko.com/api/v3",
+	coinGeckoBaseURL: "https://api.coingecko.com/api/v3/",
 };
