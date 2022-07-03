@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -8,32 +8,37 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import './CryptoTable.css';
 import { environment } from '../../../environment';
+import LoadingSpinner from '../LoadingSpinner/LoadingSpinner';
+import { Grid } from '@mui/material';
 
-const rows = [];
 
-export default class CryptoTable extends React.Component {
-	state = {
-		loading: true,
-		coins: []
-	}
+function CryptoTable() {
+	const [loading, setLoading] = useState(true);
+	const [rows, setRows] = useState([]);
+	
+	useEffect(() => {
+		async function fetchData() {
+			const response = await fetch(environment.coinGeckoBaseURL + "coins/markets?vs_currency=USD");
+			const data = await response.json();
+			
+			setTimeout(() => {
+				setRows(data);
+				setLoading(false);
+			}, 2000);
+			
+		}
+		fetchData();
+	}, []);
 
-	async componentDidMount() {
-		const response = await fetch(environment.coinGeckoBaseURL + "coins/markets?vs_currency=USD");	 
-		const data = await response.json();
+		if(loading) {
+			return (
+				<LoadingSpinner></LoadingSpinner>
+			)
+		}
 
-		this.setState({coins: data});
-
-		this.state.coins.forEach(item => {
-			rows.push(item)
-		});
-
-		this.state.loading = false;
-	}
-
-	render() {
 		return (
 			<TableContainer component={Paper}>
-				<Table sx={{ minWidth: 650 }} aria-label="simple table">
+				<Table sx={{ minWidth: 250 }} aria-label="simple table">
 					<TableHead>
 						<TableRow>
 							<TableCell><strong>Logo</strong></TableCell>
@@ -44,9 +49,9 @@ export default class CryptoTable extends React.Component {
 						</TableRow>
 					</TableHead>
 					<TableBody>
-						{rows.map((row) => (
+						{rows.map((row, index) => (
 							<TableRow
-								key={row.name}
+								key={index}
 								sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
 							>
 								<TableCell><img src={row.image} alt="Logo not found" className='logo'></img></TableCell>
@@ -62,8 +67,8 @@ export default class CryptoTable extends React.Component {
 		);
 	}
 
-}
-
 CryptoTable.propTypes = {};
 
 CryptoTable.defaultProps = {};
+
+export default CryptoTable;

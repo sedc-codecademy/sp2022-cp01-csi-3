@@ -5,21 +5,17 @@
   padding: 0 55px;
 }
 
-.item {
-  flex: 0 0 19.7%;
-  text-align: center;
-  margin: 10px 2px;
-  transition: transform 300ms ease 100ms;
+.title {
+	font-weight: bolder;
+	font-size: larger;
+	font-size: 2rem;
+	color: rgba(73, 70, 70, 0.628);
 }
 
-.container:hover .item {
-   transform: translateX(-25%);
-}
-
-.item:hover ~ .item {
-   transform: translateX(25%);
-}
-
-.item:hover {
-  transform: scale(1.1) !important;
+hr {
+	margin: 0.7rem 0;
+	border: solid #1976d2 0.15rem;
+	background-color: #1976d2;
+	border-radius: 5px;
+	width: 100%;
 }
