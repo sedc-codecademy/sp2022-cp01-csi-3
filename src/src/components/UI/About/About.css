@@ -1,1 +1,18 @@
 .About {}
+
+.Grid {
+    margin-top: 50px;
+}
+
+.Image {
+    height: 40px;
+    width: 40px;
+}
+
+.Box {
+
+}
+
+.ListItem {
+    text-align: left;
+}
