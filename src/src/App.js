@@ -11,28 +11,28 @@ import About from './components/UI/About/About';
 import TermsOfService from './components/UI/TermsOfService/TermsOfService';
 import NotFound404 from './components/UI/NotFound404/NotFound404';
 import TradingChart from './components/UI/TradingChart/TradingChart';
+import Market from './components/UI/Market/Market';
 
 function App() {
-  return (
-	  <div className="App">
-	  	<Header></Header>
-      	
-		<BrowserRouter>
-			<Routes>
-				<Route path='/' element={<Home />} />
-				<Route path='/profile' element={<Profile />} />
-				<Route path='/log-in' element={<LogIn />} />
-				<Route path='/sign-up' element={<SignUp />} />
-				<Route path='/about' element={<About />} />
-				<Route path='/terms-of-service' element={<TermsOfService />} />
-				<Route path='/trading-chart' element={<TradingChart />} />
-				<Route path='*' element={<NotFound404 />} />
-			</Routes>
-		</BrowserRouter>
-
-		<Footer></Footer>
-    </div>
-  );
+	return (
+		<div className="App">
+			<BrowserRouter>
+				<Header></Header>
+				<Routes>
+					<Route path='/home' element={<Home />} />
+					<Route path='/profile' element={<Profile />} />
+					<Route path='/log-in' element={<LogIn />} />
+					<Route path='/sign-up' element={<SignUp />} />
+					<Route path='/about' element={<About />} />
+					<Route path='/terms-of-service' element={<TermsOfService />} />
+					<Route path='/trading-chart' element={<TradingChart />} />
+					<Route path='/market' element={<Market/>} />
+					<Route path='*' element={<NotFound404 />} />
+				</Routes>
+				<Footer></Footer>
+			</BrowserRouter>
+		</div>
+	);
 }
 
 export default App;

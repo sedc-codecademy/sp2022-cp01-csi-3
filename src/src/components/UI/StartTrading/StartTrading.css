@@ -1,1 +1,26 @@
 .StartTrading {}
+
+.title {
+	background-color: #1976d2;
+	border-radius: 1rem 1rem 0 0;
+	padding: 1rem;
+	color: white;
+	font-family: 'Courier New', Courier, monospace;
+	margin: 0 0 !important;
+	font-size: 1.5rem;
+}
+
+.content {
+	padding: 1rem;
+	border: #1976d2 solid 0.3rem;
+	margin: 0 0 !important;
+	margin-bottom: 0.5rem;
+	border-radius: 0 0 1rem 1rem;
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: bold;
+}
+
+h3 {
+	margin: 0 0;
+}
+

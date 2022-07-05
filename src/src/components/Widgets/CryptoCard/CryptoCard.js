@@ -1,6 +1,13 @@
-import React from 'react';
+import * as React from 'react';
+import Box from '@mui/material/Box';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
 import PropTypes from 'prop-types';
 import './CryptoCard.css';
+import { Link } from '@mui/material';
 
 const CryptoCard = (prop) => (
 	<Card sx={{ maxWidth: 400 }}>
@@ -13,7 +20,11 @@ const CryptoCard = (prop) => (
 			</Typography>
 		</CardContent>
 		<CardActions>
-			<Button size="small">Watch Video</Button>
+			<Button size="small">
+				<Link to={"/log-in"}>
+					Watch Video
+				</Link>
+			</Button>
 		</CardActions>
 	</Card>
 );

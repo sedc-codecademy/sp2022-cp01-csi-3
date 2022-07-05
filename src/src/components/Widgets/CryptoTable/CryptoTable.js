@@ -9,26 +9,42 @@ import Paper from '@mui/material/Paper';
 import './CryptoTable.css';
 import { environment } from '../../../environment';
 import LoadingSpinner from '../LoadingSpinner/LoadingSpinner';
-import { Grid } from '@mui/material';
-
 
 function CryptoTable() {
+	const [coins, setCoins] = useState([]);
 	const [loading, setLoading] = useState(true);
-	const [rows, setRows] = useState([]);
+	const [tableCoins, setTable] = useState([]);
+	let rows = [];
 	
+	function loadCoins() {
+		const counter = rows.length + 5;
+
+		for(let i = rows.length; i < counter; i++) {
+			if(coins[i]) {
+				rows.push(coins[i]);
+			} else {
+				break;
+			}
+		}
+
+		setTable(rows);
+	}
+
 	useEffect(() => {
 		async function fetchData() {
 			const response = await fetch(environment.coinGeckoBaseURL + "coins/markets?vs_currency=USD");
 			const data = await response.json();
-			
+
 			setTimeout(() => {
-				setRows(data);
-				setLoading(false);
-			}, 2000);
-			
+				setCoins(data);
+				loadCoins();
+				if(rows.length > 0) {
+					setLoading(false);
+				};
+			}, 1000);
 		}
 		fetchData();
-	}, []);
+	});
 
 		if(loading) {
 			return (
@@ -49,7 +65,7 @@ function CryptoTable() {
 						</TableRow>
 					</TableHead>
 					<TableBody>
-						{rows.map((row, index) => (
+						{tableCoins.map((row, index) => (
 							<TableRow
 								key={index}
 								sx={{ '&:last-child td, &:last-child th': { border: 0 } }}

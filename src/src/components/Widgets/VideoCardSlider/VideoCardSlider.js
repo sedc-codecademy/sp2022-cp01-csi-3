@@ -6,9 +6,9 @@ import { Grid } from '@mui/material';
 
 const videos = [
 	{
-		lable: "Easy Day Trading Strategy Anyone Can Learn",
-		description: "How to trade on statistics, not on luck... Watch, try, invest, learn repeat...",
-		url: "https://www.youtube.com/watch?v=xbAQR1e1XY8&ab_channel=CryptoBusy"
+		lable: "My Crypto Trading Strategy REVEALED!! Top TIPS! 💯",
+		description: "The backbone of my personal crypto trading strategy is Bitcoin.This is simply because BTCs price has a huge influence over the price of other cryptocurrencies",
+		url: "https://www.youtube.com/watch?v=EADLE7kO4tA&ab_channel=CoinBureau"
 	},
 	{
 		lable: "How does a blockchain work - Simply Explained",

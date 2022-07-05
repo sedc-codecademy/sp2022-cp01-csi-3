@@ -1,1 +1,33 @@
-.Header {}
+.Header {
+	flex-grow: 1;
+	margin-bottom: 60.78px;
+	display: flex;
+}
+
+.navBar {
+	padding: 0.4rem;
+	position: fixed !important;
+	top: 0px !important; 
+}
+
+.menuButton {
+	margin-right: 0.6rem;
+}
+
+.link {
+	text-decoration: none;
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: bolder;
+	color: white;
+	padding: 0.4rem;
+	border-radius: 0.3rem;
+	margin: 0 0.5rem;
+}
+
+.link:hover {
+	background-color: rgba(45, 255, 248, 0.779);
+}
+
+.rightSide {
+	align-self: flex-end;
+}
