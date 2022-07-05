@@ -6,6 +6,7 @@ import { Grid } from '@mui/material';
 import VideoCardSlider from '../../Widgets/VideoCardSlider/VideoCardSlider';
 import CryptoTable from '../../Widgets/CryptoTable/CryptoTable';
 import StartTrading from '../StartTrading/StartTrading';
+import CryptoCard from '../../Widgets/CryptoCard/CryptoCard';
 
 const Home = () => (
   <div className="Home">
@@ -29,8 +30,12 @@ const Home = () => (
 				<CryptoTable></CryptoTable>
 			</Grid>
 			<Grid item xs={0} sm={1} md={1}></Grid>
-			<Grid item xs={12} sm={4} md={3}>
+			<Grid item xs={12} sm={5} md={4}>
 				<StartTrading></StartTrading>
+				<br />
+				<br />
+				<br />
+				<CryptoCard></CryptoCard>
 			</Grid>
 		</Grid>
   </div>

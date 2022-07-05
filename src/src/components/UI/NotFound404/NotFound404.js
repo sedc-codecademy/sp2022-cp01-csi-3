@@ -8,19 +8,19 @@ const NotFound404 = () => (
 	<div className='NotFound404'>
 		<div className='c'>
 			<div className='_404'>404</div>
-				<br />
+			<br />
 			<hr />
-				<br />
+			<br />
 			<div className='_1'>THE PAGE</div>
-				<br />
+			<br />
 			<div className='_2'>WAS NOT FOUND</div>
-				<br />
-				<br />
-			<Button variant="contained">
-				<Link to={'/'}>
+			<br />
+			<br />
+			<Link to={'/home'} style={{textDecoration: 'none'}}>
+				<Button variant="contained">
 					Home
-				</Link>
-			</Button>
+				</Button>
+			</Link>
 		</div>
 	</div>
 );
