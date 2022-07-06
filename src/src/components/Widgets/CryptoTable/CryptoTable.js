@@ -53,7 +53,7 @@ function CryptoTable() {
 		}
 
 		return (
-			<TableContainer component={Paper}>
+			<TableContainer component={Paper} className="test">
 				<Table sx={{ minWidth: 250 }} aria-label="simple table">
 					<TableHead>
 						<TableRow>

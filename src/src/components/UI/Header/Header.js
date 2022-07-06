@@ -16,6 +16,7 @@ export default function Navbar() {
 		<div className="Header">
 			<AppBar position="static" className='navBar'>
 				<Toolbar variant="dense">
+					<img src='https://i.imgur.com/uBLKwse.png' height={100} width={100} ></img>
 					<NavLink to={'/home'} className="link" style={({ isActive }) =>
 						isActive
 							? {

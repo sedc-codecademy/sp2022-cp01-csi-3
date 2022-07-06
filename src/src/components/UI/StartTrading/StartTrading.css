@@ -1,4 +1,8 @@
-.StartTrading {}
+.StartTrading {
+
+	background-color: white;
+	border-radius: 20px;
+}
 
 .title {
 	background-color: #1976d2;
