@@ -9,14 +9,14 @@ import PropTypes from 'prop-types';
 import './CryptoCard.css';
 import { Link } from '@mui/material';
 
-const CryptoCard = (prop) => (
+export default function CryptoCard(prop) {
 	<Card sx={{ maxWidth: 400 }}>
 		<CardContent>
 			<Typography gutterBottom variant="h5" component="div">
-				{ prop.name }
+				{ prop.coins[0] }
 			</Typography>
 			<Typography variant="body2" color="text.secondary">
-				{ prop.description }
+				{/* { prop.coins[0].id } */}
 			</Typography>
 		</CardContent>
 		<CardActions>
@@ -27,10 +27,8 @@ const CryptoCard = (prop) => (
 			</Button>
 		</CardActions>
 	</Card>
-);
+};
 
 CryptoCard.propTypes = {};
 
 CryptoCard.defaultProps = {};
-
-export default CryptoCard;
