@@ -1,6 +1,6 @@
 .Header {
 	flex-grow: 1;
-	margin-bottom: 60.78px;
+	margin-bottom: 70px;
 	display: flex;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .link:hover {
-	background-color: rgba(80, 182, 255, 0.632);
+	background-color: rgba(80, 182, 255, 0.545);
 }
 
 .rightSide {

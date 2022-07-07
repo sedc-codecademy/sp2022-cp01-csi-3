@@ -16,7 +16,7 @@ export default function Navbar() {
 		<div className="Header">
 			<AppBar position="static" className='navBar'>
 				<Toolbar variant="dense">
-					<img src='https://i.imgur.com/uBLKwse.png' height={100} width={100} ></img>
+					<img src='https://i.imgur.com/uBLKwse.png' height={80} width={80} ></img>
 					<NavLink to={'/home'} className="link" style={({ isActive }) =>
 						isActive
 							? {
@@ -39,6 +39,18 @@ export default function Navbar() {
 					}>
 						<Typography variant="h6" color="inherit">
 							Market
+						</Typography>
+					</NavLink>
+					<NavLink to={'/about'} className="link" style={({ isActive }) =>
+						isActive
+							? {
+								backgroundColor: 'rgba(143, 255, 255, 0.400)',
+								color: 'rgb(255, 255, 255)',
+							}
+							: {}
+					}>
+						<Typography variant="h6" color="inherit">
+							About
 						</Typography>
 					</NavLink>
 					<NavLink to={'/log-in'} className="link rightSide" style={({ isActive }) =>

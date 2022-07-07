@@ -10,7 +10,7 @@ import CryptoCard from '../../Widgets/CryptoCard/CryptoCard';
 
 const Home = () => (
   <div className="Home">
-		<Grid container spacing={4}>
+		<Grid container spacing={4} >
 			<Grid item xs={12}>
 				<hr></hr>
 				<h2 className='title'>
