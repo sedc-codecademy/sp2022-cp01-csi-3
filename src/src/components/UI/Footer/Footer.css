@@ -1,1 +1,20 @@
-.Footer {}
+.Footer {
+    background-color: #3f51b5;
+    color:  white;
+}
+
+p{
+    text-size-adjust: 30px;
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+
+.Link {
+    text-decoration: none !important;
+}
+
+.Box {
+    margin-left: 50px;
+    margin-right: 50px;
+    border-bottom: 1px solid;
+}

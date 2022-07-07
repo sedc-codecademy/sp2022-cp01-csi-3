@@ -15,33 +15,55 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
-const ListComponent = () => { 
-  return ( 
-    <div> 
-      <h1>TEST</h1> 
-    </div> 
-  ); 
-}; 
+// const ListComponent = () => { 
+//   return ( 
+//     <div> 
+//       <h1>TEST</h1> 
+//     </div> 
+//   ); 
+// }; 
 
-export default function ResponsiveGrid() {
-  return (
+function handleClick () {
+  console.log("TEST");
+}
+
+const About = () => (
+  <div className="About">
     <Box sx={{ flexGrow: 1 }} className="Container">
+    <Grid className="Grid">
+        <Item className='Item'>
+        <img className="Icon" src='https://cdn-icons-png.flaticon.com/512/991/991959.png'></img>
+          <h1>What is Cryptocurrency?</h1>
+          <p>Cryptocurrency is a new kind of internet money. You can use it to buy things online, and you can send it instantly to other users anywhere in the world, needing nothing more than a smartphone and an internet connection.
+            Cryptocurrency can be cheaper and more convenient than many existing services like Paypal or Transferwise, if - for example - you regularly send money overseas. Several million people are actively using it today for that purpose.
+            Worthwhile as that is, it isn’t what’s drawing people’s attention
+            As well as functioning as a new type of internet money, cryptocurrency is also a very popular form of investment, with eye-popping long-term appreciation.
+            Newcomers to cryptocurrency find this aspect very confusing. How can this new internet money, which can’t even be touched, be so valuable? 
+            Well, we hope that you will expand your knowledge by using our website!</p>
+        </Item>
+      </Grid>
+      <Grid className='infoGrid'>
+        <Item className='infoItem'>
+          <span class="span">€60,000,000</span>
+          <p className='paragraph'>What €1 invested in 2009 in Bitcoin is worth in 2022</p>
+        </Item>
+      </Grid>
       <Grid className="Grid" container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
         <Grid  className="Box" item xs={2} sm={4} md={4}>
-            <Item className='Item'><img className="Image" src='https://cdn-icons-png.flaticon.com/512/5341/5341448.png'></img>
+            <Item className='Item'><img className="Icon" src='https://cdn-icons-png.flaticon.com/512/5341/5341448.png'></img>
               <h1>How to use crypto</h1>
               <ul>
                 <li className="ListItem">Secure your crypto</li>
                 <li className="ListItem">Make transactions</li>
                 <li className="ListItem">Advanced crypto use-cases</li>
               </ul>
-              <Button variant="contained" onClick={ListComponent}>
+              <Button variant="contained" onClick={handleClick}>
                   Learn More →
               </Button>
             </Item>
           </Grid>
           <Grid className="Box" item xs={2} sm={4} md={4}>
-            <Item><img className="Image" src='https://cdn-icons-png.flaticon.com/512/4285/4285667.png'></img>
+            <Item className='Item'><img className="Icon" src='https://cdn-icons-png.flaticon.com/512/4285/4285667.png'></img>
               <h1>How to trade crypto</h1>
               <ul>
                 <li className="ListItem">Understanding risk</li>
@@ -54,7 +76,7 @@ export default function ResponsiveGrid() {
             </Item>
           </Grid>
           <Grid className="Box" item xs={2} sm={4} md={4}>
-            <Item><img className="Image" src='https://cdn-icons-png.flaticon.com/512/2685/2685027.png'></img>
+            <Item className='Item'><img className="Icon" src='https://cdn-icons-png.flaticon.com/512/2685/2685027.png'></img>
               <h1>How to earn crypto</h1>
               <ul>
                 <li className="ListItem">Earn by Learning & Working</li>
@@ -68,24 +90,18 @@ export default function ResponsiveGrid() {
           </Grid>
       </Grid>
     </Box>
-  );
-}
-
-// import React from 'react';
-// import PropTypes from 'prop-types';
-// import Button from "@material-ui/core/Button";
-// import Grid from '@mui/material/Grid';
-// import './About.css';
-
-// const About = () => (
-//   <div className="About">
-    
-//   </div>
-// );
+  </div>
+);
 
 
-// About.propTypes = {};
+About.propTypes = {};
 
-// About.defaultProps = {};
+About.defaultProps = {};
 
-// export default About;
+export default About;
+
+// export default function ResponsiveGrid() {
+//   return (
+//     <
+//   );
+// }
