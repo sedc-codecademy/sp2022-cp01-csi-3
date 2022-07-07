@@ -15,16 +15,20 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
-const ListComponent = () => { 
-  return ( 
-    <div> 
-      <h1>TEST</h1> 
-    </div> 
-  ); 
-}; 
+// const ListComponent = () => { 
+//   return ( 
+//     <div> 
+//       <h1>TEST</h1> 
+//     </div> 
+//   ); 
+// }; 
 
-export default function ResponsiveGrid() {
-  return (
+function handleClick () {
+  console.log("TEST");
+}
+
+const About = () => (
+  <div className="About">
     <Box sx={{ flexGrow: 1 }} className="Container">
       <Grid className="Grid" container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
         <Grid  className="Box" item xs={2} sm={4} md={4}>
@@ -35,13 +39,13 @@ export default function ResponsiveGrid() {
                 <li className="ListItem">Make transactions</li>
                 <li className="ListItem">Advanced crypto use-cases</li>
               </ul>
-              <Button variant="contained" onClick={ListComponent}>
+              <Button variant="contained" onClick={handleClick}>
                   Learn More →
               </Button>
             </Item>
           </Grid>
           <Grid className="Box" item xs={2} sm={4} md={4}>
-            <Item><img className="Image" src='https://cdn-icons-png.flaticon.com/512/4285/4285667.png'></img>
+            <Item className='Item'><img className="Image" src='https://cdn-icons-png.flaticon.com/512/4285/4285667.png'></img>
               <h1>How to trade crypto</h1>
               <ul>
                 <li className="ListItem">Understanding risk</li>
@@ -54,7 +58,7 @@ export default function ResponsiveGrid() {
             </Item>
           </Grid>
           <Grid className="Box" item xs={2} sm={4} md={4}>
-            <Item><img className="Image" src='https://cdn-icons-png.flaticon.com/512/2685/2685027.png'></img>
+            <Item className='Item'><img className="Image" src='https://cdn-icons-png.flaticon.com/512/2685/2685027.png'></img>
               <h1>How to earn crypto</h1>
               <ul>
                 <li className="ListItem">Earn by Learning & Working</li>
@@ -68,24 +72,18 @@ export default function ResponsiveGrid() {
           </Grid>
       </Grid>
     </Box>
-  );
-}
-
-// import React from 'react';
-// import PropTypes from 'prop-types';
-// import Button from "@material-ui/core/Button";
-// import Grid from '@mui/material/Grid';
-// import './About.css';
-
-// const About = () => (
-//   <div className="About">
-    
-//   </div>
-// );
+  </div>
+);
 
 
-// About.propTypes = {};
+About.propTypes = {};
 
-// About.defaultProps = {};
+About.defaultProps = {};
 
-// export default About;
+export default About;
+
+// export default function ResponsiveGrid() {
+//   return (
+//     <
+//   );
+// }

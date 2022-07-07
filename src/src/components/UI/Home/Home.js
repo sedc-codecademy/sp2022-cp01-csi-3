@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Home.css';
 import { Grid } from '@mui/material';
-
 import VideoCardSlider from '../../Widgets/VideoCardSlider/VideoCardSlider';
 import CryptoTable from '../../Widgets/CryptoTable/CryptoTable';
 import StartTrading from '../StartTrading/StartTrading';
