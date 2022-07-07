@@ -4,8 +4,7 @@
 	display: flex;
 }
 
-.navBar {
-	padding: 0.4rem;
+.navBar {	
 	position: fixed !important;
 	top: 0px !important; 
 }
@@ -28,6 +27,14 @@
 	background-color: rgba(80, 182, 255, 0.545);
 }
 
-.rightSide {
-	/* align-self: flex-end; */
+.navBar #signUpButton{
+	background-color: rgba(253,106,124,255);
+}
+.Header .dispalyLeftLogin{
+	display: flex;	
+	flex: 100%;
+	flex-direction: row;
+	justify-content: flex-end; 
+}
+.rightSide {	
 }

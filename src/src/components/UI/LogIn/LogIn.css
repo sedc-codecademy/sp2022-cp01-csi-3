@@ -1,1 +1,4 @@
-.LogIn {}
+.LogIn {
+    display: flex;
+    flex-direction: column;    
+}
