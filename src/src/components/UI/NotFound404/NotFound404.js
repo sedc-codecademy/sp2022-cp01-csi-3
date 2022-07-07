@@ -16,7 +16,7 @@ const NotFound404 = () => (
 			<div className='_2'>WAS NOT FOUND</div>
 			<br />
 			<br />
-			<Link to={'/home'} style={{textDecoration: 'none'}}>
+			<Link to={''} style={{textDecoration: 'none'}}>
 				<Button variant="contained">
 					Home
 				</Button>

@@ -8,7 +8,7 @@ import './VideoCard.css';
 
 const VideoCard = (props) => (
 	<div className="VideoCard">
-		<Card>
+		<Card style={{height: 350}}>
 			<CardMedia>
 				<ReactPlayer height="100%" width="100%" url={props.video.url}></ReactPlayer>
 			</CardMedia>
