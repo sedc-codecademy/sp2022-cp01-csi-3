@@ -38,8 +38,7 @@ export default function Home() {
 				<CryptoCard coins={coins}></CryptoCard>
 			</Grid>			
 		</Grid>
-		</div>
-  </div>
+	</div>
   );
 };
 

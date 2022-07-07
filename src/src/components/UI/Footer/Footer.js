@@ -12,38 +12,38 @@ export default function Footer() {
       <Container maxWidth="lg">
       <Grid container spacing={5}>
             <Grid item xs={12} sm={4}>
-              <Box className="Box"><p>Help</p></Box>
+              <Box className="Box"><p className='heading'>Help</p></Box>
               <Box>
                 <Link href="/" color="inherit" className='Link'>
-                ⮞ Contact
+                <p className='text'>⮞&nbsp;&nbsp;Contact</p>
                 </Link>
               </Box>
               <Box>
                 <Link href="/" color="inherit" className='Link'>
-                  Support
+                <p className='text'>⮞&nbsp;&nbsp;Support</p>
                 </Link>
               </Box>
               <Box>
                 <Link href="/" color="inherit" className='Link'>
-                  Privacy
+                <p className='text'>⮞&nbsp;&nbsp;Privacy</p>
                 </Link>
               </Box>
             </Grid>
             <Grid item xs={12} sm={4}>
-              <Box  className="Box"><p>Account</p></Box>
+              <Box  className="Box"><p className='heading'>Account</p></Box>
               <Box>
                 <Link href="/log-in" color="inherit" className='Link'>
-                  Login
+                <p className='text'>⮞&nbsp;&nbsp;Login</p>
                 </Link>
               </Box>
               <Box>
                 <Link href="/sign-up" color="inherit" className='Link'>
-                  Register
+                <p className='text'>⮞&nbsp;&nbsp;Register</p>
                 </Link>
               </Box>
             </Grid>
             <Grid item xs={12} sm={4}>
-              <Box className="Box"><p>Social</p></Box>
+              <Box className="Box"><p className='heading'>Social</p></Box>
               <Box className='socialIcons'>
               <InstagramIcon/>
                 <Link href="/" color="inherit" className='Link'>
@@ -64,8 +64,8 @@ export default function Footer() {
               </Box>
             </Grid>
           </Grid>
-        <Box textAlign="center">
-          Copyright &reg; {new Date().getFullYear()}
+        <Box className='copyright'>
+        Copyright &reg; {new Date().getFullYear()}. All rights reserved.
         </Box>
       </Container>
     </Box>
