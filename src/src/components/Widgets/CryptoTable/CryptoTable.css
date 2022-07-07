@@ -7,11 +7,11 @@
 }
 
 .table {
-	border-left: solid rgb(25 118 210) 0.3rem;
-	border-right: solid rgb(25 118 210) 0.3rem;
-	border-bottom: solid rgb(25 118 210) 0.3rem;
+	border-left: solid #3f51b5 0.3rem;
+	border-right: solid #3f51b5 0.3rem;
+	border-bottom: solid #3f51b5 0.3rem;
 }
 
 .tableHead {
-	border-bottom: solid rgb(25 118 210) 0.13rem;
+	border-bottom: solid #3f51b5 0.13rem;
 }
