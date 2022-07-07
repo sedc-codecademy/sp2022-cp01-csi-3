@@ -18,7 +18,6 @@ export default function Navbar() {
 				<Toolbar variant="dense">
 					<img src='https://i.imgur.com/uBLKwse.png' height={80} width={80} ></img>
 					<NavLink to={'/home'} className="link" style={({ isActive }) =>
-						isActive
 							? {
 								backgroundColor: 'rgba(143, 255, 255, 0.400)',
 								color: 'rgb(255, 255, 255)',

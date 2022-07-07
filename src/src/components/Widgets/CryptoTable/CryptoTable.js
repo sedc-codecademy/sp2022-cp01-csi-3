@@ -10,7 +10,7 @@ import './CryptoTable.css';
 import { environment } from '../../../environment';
 import LoadingSpinner from '../LoadingSpinner/LoadingSpinner';
 
-function CryptoTable() {
+function CryptoTable({getCoins}) {
 	const [coins, setCoins] = useState([]);
 	const [loading, setLoading] = useState(true);
 	const [tableCoins, setTable] = useState([]);
@@ -27,6 +27,7 @@ function CryptoTable() {
 			}
 		}
 
+		getCoins(coins);
 		setTable(rows);
 	}
 
