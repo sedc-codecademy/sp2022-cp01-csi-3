@@ -73,9 +73,9 @@ function CryptoTable({getCoins}) {
 							>
 								<TableCell><img src={row.image} alt="Logo not found" className='logo'></img></TableCell>
 								<TableCell>{row.name}</TableCell>
-								<TableCell>{row.current_price} $</TableCell>
+								<TableCell>{row.current_price}$</TableCell>
 								<TableCell>{row.last_updated}</TableCell>
-								<TableCell>{row.price_change_percentage_24h} %</TableCell>
+								<TableCell>{row.price_change_percentage_24h}%</TableCell>
 							</TableRow>
 						))}
 					</TableBody>
