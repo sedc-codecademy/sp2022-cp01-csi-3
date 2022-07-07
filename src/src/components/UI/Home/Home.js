@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
   <div className="Home">
-		<Grid container spacing={4}>
+		<Grid container spacing={4} >
 			<Grid item xs={12}>
 				<hr></hr>
 				<h2 className='title'>
