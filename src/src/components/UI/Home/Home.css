@@ -5,12 +5,13 @@
 }
 
 .container {
+	margin-top: 50px;
   	display: flex;
   	padding: 0 55px;
 }
 
 .title {
-	font-family: 'Courier New', Courier, monospace;
+	font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 	font-weight: bolder;
 	font-size: larger;
 	font-size: 2rem;

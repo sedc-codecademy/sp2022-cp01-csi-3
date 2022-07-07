@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const StartTrading = () => (
   <div className="StartTrading">
-	<Grid item xs={12}>
+	<Grid item xs={12} >
 		<div className='title'>
 			<h3>Start Trading, Investing, Simulation...</h3>
 		</div>

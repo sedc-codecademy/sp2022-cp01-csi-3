@@ -1,1 +1,58 @@
-.Profile {}
+.Profile {
+    display: flex;
+}
+.Sidebar {
+    flex: 25%;
+}
+.profileInfos{
+    flex: 75%;
+}
+.floatingBar{
+    display: flex;   
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border-top-right-radius: 0%;   
+    border-top-left-radius: 0%;   
+}
+.profileInfos .avatarAndEmailInfo{
+   display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.avatarAndEmailInfo #profileAvatar{
+    background-color: #3f51b5;
+    margin: 0.3rem; 
+}
+.avatarAndEmailInfo #mailStyle{
+    margin: 0.3rem;
+    font-weight: 550;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+.Profile .profileContent{
+    display: flex;
+    width: 75vw;
+    height: 100vh;    
+}
+.profileContent .leftSide{
+    display: flex;    
+    width: 57vw;
+    height: 100%;
+    background-color: #1e275c;
+}
+.profileContent .buttonsAndBalance{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 6%;
+}
+.profileContent #balanceDetails{
+    color: white;
+    flex: 55%;
+}
+.buttonsAndBalance #buttons{
+    margin: 0.3rem;
+    display: flex;
+    
+    
+}

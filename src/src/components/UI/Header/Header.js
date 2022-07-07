@@ -17,10 +17,10 @@ export default function Navbar() {
 			<AppBar position="static" className='navBar'>
 				<Toolbar variant="dense">
 					<img src='https://i.imgur.com/uBLKwse.png' height={80} width={80} ></img>
-					<NavLink to={'/home'} className="link" style={({ isActive }) =>
+					<NavLink to={'/'} className="link" style={({ isActive }) => isActive
 							? {
 								backgroundColor: 'rgba(143, 255, 255, 0.400)',
-								color: 'rgb(255, 255, 255)',
+								color: 'rgb(255, 255, 255)'
 							}
 							: {}
 					}>
@@ -52,6 +52,7 @@ export default function Navbar() {
 							About
 						</Typography>
 					</NavLink>
+					<div className="dispalyLeftLogin" >
 					<NavLink to={'/log-in'} className="link rightSide" style={({ isActive }) =>
 						isActive
 							? {
@@ -60,11 +61,11 @@ export default function Navbar() {
 							}
 							: {}
 					}>
-						<Typography variant="h6" color="inherit">
+						<Typography variant="h6" color="inherit">							
 							Log In
 						</Typography>
 					</NavLink>
-					<NavLink to={'/sign-up'} className="link rightSide" style={({ isActive }) =>
+					<NavLink to={'/sign-up'} className="link rightSide" id="signUpButton" style={({ isActive }) =>
 						isActive
 							? {
 								backgroundColor: 'rgba(143, 255, 255, 0.400)',
@@ -76,6 +77,7 @@ export default function Navbar() {
 							Sign Up
 						</Typography>
 					</NavLink>
+					</div>
 				</Toolbar>
 			</AppBar>
 		</div>
