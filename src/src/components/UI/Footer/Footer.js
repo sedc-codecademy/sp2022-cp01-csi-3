@@ -15,7 +15,7 @@ export default function Footer() {
               <Box className="Box"><p>Help</p></Box>
               <Box>
                 <Link href="/" color="inherit" className='Link'>
-                  Contact
+                ⮞ Contact
                 </Link>
               </Box>
               <Box>
@@ -44,19 +44,19 @@ export default function Footer() {
             </Grid>
             <Grid item xs={12} sm={4}>
               <Box className="Box"><p>Social</p></Box>
-              <Box>
+              <Box className='socialIcons'>
               <InstagramIcon/>
                 <Link href="/" color="inherit" className='Link'>
                     Instagram
                 </Link>
               </Box>
-              <Box>
-                <FacebookIcon></FacebookIcon>
+              <Box className='socialIcons'>
+                <FacebookIcon/>
                 <Link href="/" color="inherit" className='Link'>
                   Facebook
                 </Link>
               </Box>
-              <Box>
+              <Box className='socialIcons'>
                 <WhatsAppIcon/>
                 <Link href="/" color="inherit" className='Link'>
                   Whatsapp

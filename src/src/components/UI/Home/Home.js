@@ -17,12 +17,6 @@ export default function Home() {
   return (
   <div className="Home">
 		<Grid container spacing={4} >
-			<Grid item xs={12}>
-				<hr></hr>
-				<h2 className='title'>
-					Tutorial Videos
-				</h2>
-			</Grid>
 			<Grid item xs={0} sm={1} md={2}></Grid>
 			<Grid item xs={12} sm={10} md={8}>
 				<VideoCardSlider></VideoCardSlider>

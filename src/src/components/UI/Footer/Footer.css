@@ -18,3 +18,9 @@ p{
     margin-right: 50px;
     border-bottom: 1px solid;
 }
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}

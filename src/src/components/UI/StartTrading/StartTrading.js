@@ -14,7 +14,7 @@ const StartTrading = () => (
 	<Grid item xs={12}>
 		<div className='content'>
 			<p>Test your knowledge about crypto, decision making when it matters and luck. Simulate the real thing right here.</p>
-			<Button variant="contained">
+			<Button variant="contained" className='button'>
 				<Link to={"/log-in"} style={{textDecoration: "none", color: "white", fontWeight: "bolder"}}>
 					Start Simulation
 				</Link>
