@@ -54,10 +54,10 @@ function CryptoTable({getCoins}) {
 		}
 
 		return (
-			<TableContainer component={Paper} className="test">
-				<Table sx={{ minWidth: 250 }} aria-label="simple table">
-					<TableHead>
-						<TableRow>
+			<TableContainer component={Paper} className="CryptoTable">
+				<Table sx={{ minWidth: 250 }} aria-label="simple table"  className='table'>
+					<TableHead  className='tableHead'>
+						<TableRow> 
 							<TableCell><strong>Logo</strong></TableCell>
 							<TableCell><strong>Name</strong></TableCell>
 							<TableCell><strong>Price</strong></TableCell>
@@ -67,7 +67,7 @@ function CryptoTable({getCoins}) {
 					</TableHead>
 					<TableBody>
 						{tableCoins.map((row, index) => (
-							<TableRow
+							<TableRow className='tableRow'
 								key={index}
 								sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
 							>

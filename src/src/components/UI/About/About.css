@@ -8,19 +8,56 @@ body {
 }
 
 .Box {
-    border-color: red;
 }
 
 .Item {
-    border: 50px;
-    border-color: red;
+    background-color: aliceblue !important;
+    color: black !important;
+    margin-left: 50px !important;
+    margin-right: 50px !important;
+    margin-bottom: 30px !important;
+    /* opacity: 0.5 !important; */
+    border: solid rgb(25 118 210) 0.3rem;
+
 }
 
-.Image {
+.infoGrid{
+    margin-bottom: 30px;
+}
+
+.infoItem {
+    background: none !important;
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+}
+
+.span {
+    font-size: 70px;
+    line-height: 100%;
+    font-weight: 600;
+    letter-spacing: -.04em;
+    padding-left: 300px;
+    color: #467df9;
+    float: left;
+
+    margin-top: -20px;
+}
+
+.paragraph {
+    color: rgb(203, 231, 255);
+    padding-right: 300px;
+}
+
+.Icon {
     height: 40px;
     width: 40px;
 }
 
 .ListItem {
     text-align: left;
+    font-size: 18px;
+}
+
+p {
+    font-size: 20px;
 }

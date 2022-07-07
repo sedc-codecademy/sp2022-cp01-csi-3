@@ -1,6 +1,17 @@
 .CryptoTable {
+	margin-bottom: 25px;
 }
 
 .logo {
 	width: 50px;
+}
+
+.table {
+	border-left: solid rgb(25 118 210) 0.3rem;
+	border-right: solid rgb(25 118 210) 0.3rem;
+	border-bottom: solid rgb(25 118 210) 0.3rem;
+}
+
+.tableHead {
+	border-bottom: solid rgb(25 118 210) 0.13rem;
 }
