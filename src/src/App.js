@@ -12,12 +12,17 @@ import TermsOfService from './components/UI/TermsOfService/TermsOfService';
 import NotFound404 from './components/UI/NotFound404/NotFound404';
 import TradingChart from './components/UI/TradingChart/TradingChart';
 import Market from './components/UI/Market/Market';
+import { Grid } from '@mui/material';
 
 function App() {
 	return (
 		<div className="App">
+			<Grid className='contentBoxHolder'>
 			<BrowserRouter>
+				<Grid xs={12}>
 				<Header></Header>
+				</Grid>
+				<Grid xs={12}>
 				<Routes>
 					<Route path='' element={<Home />} />
 					<Route path='/profile' element={<Profile />} />
@@ -29,8 +34,12 @@ function App() {
 					<Route path='/market' element={<Market/>} />
 					<Route path='*' element={<NotFound404 />} />
 				</Routes>
-				<Footer></Footer>
+				</Grid>
 			</BrowserRouter>
+			</Grid>
+				<Grid xs={12} className="footer">
+				<Footer></Footer>
+				</Grid>
 		</div>
 	);
 }

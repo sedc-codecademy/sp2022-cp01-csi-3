@@ -6,7 +6,12 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import './Footer.css';
 
 export default function Footer() {
-  return <footer>
+  return <footer style={{
+	  position: document.body.scrollHeight > document.body.clientHeight ? console.log("does have") : console.log("dosenthave"),
+	  left: 0,
+	  bottom: 0,
+	  right: 0,
+  }}>
     <Box className='Footer' px={{xs:3, sm:8}} 
     py={{xs:5,sm:8}}>
       <Container maxWidth="lg">
