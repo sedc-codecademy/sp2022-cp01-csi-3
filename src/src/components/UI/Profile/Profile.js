@@ -6,6 +6,8 @@ import Sidebar from "./ProfileComponenets/Sidebar/Sidebar";
 import { Avatar,Button,TextField } from "@material-ui/core";
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import LogIn from '../LogIn/LogIn'
+import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
+import ArrowCircleDownIcon from '@mui/icons-material/ArrowCircleDown';
 
 function Profile(){
   const withdrawButton = { margin:"0px 5px 0px 0px",background:"rgba(253,106,124,255)",color:"white" 
@@ -26,8 +28,8 @@ function Profile(){
             <div className="buttonsAndBalance">
               <h4 id="balanceDetails">Balance details:</h4>
               <div id="buttons">
-              <Button variant="contained" style={withdrawButton}>Withdraw</Button>
-              <Button variant="contained">Deposit</Button>
+              <Button variant="contained" style={withdrawButton}><ArrowCircleUpIcon/>Withdraw</Button>
+              <Button variant="contained"><ArrowCircleDownIcon/>Deposit</Button>
               </div>              
             </div>
           </div>

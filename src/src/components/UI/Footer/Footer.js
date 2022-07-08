@@ -16,7 +16,7 @@ export default function Footer() {
     py={{xs:5,sm:8}}>
       <Container maxWidth="lg">
       <Grid container spacing={5}>
-            <Grid item xs={12} sm={4}>
+            <Grid item xs={12} sm={4} id="footerBox">
               <Box className="Box"><p>Help</p></Box>
               <Box>
                 <Link href="/" color="inherit" className='Link'>
@@ -34,7 +34,7 @@ export default function Footer() {
                 </Link>
               </Box>
             </Grid>
-            <Grid item xs={12} sm={4}>
+            <Grid item xs={12} sm={4} id="footerBox">
               <Box  className="Box"><p>Account</p></Box>
               <Box>
                 <Link href="/log-in" color="inherit" className='Link'>
@@ -47,7 +47,7 @@ export default function Footer() {
                 </Link>
               </Box>
             </Grid>
-            <Grid item xs={12} sm={4}>
+            <Grid item xs={12} sm={4} id="footerBox">
               <Box className="Box"><p>Social</p></Box>
               <Box className='socialIcons'>
               <InstagramIcon/>

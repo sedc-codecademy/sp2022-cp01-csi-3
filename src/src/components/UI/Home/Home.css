@@ -27,3 +27,10 @@ hr {
 	border-radius: 5px; */
 	width: 100%;
 }
+#sliderBackground{
+	display: flex;
+	margin: 0px;
+	background-color: antiquewhite;
+	border-radius: 20px;	
+	padding: 0px;
+}
