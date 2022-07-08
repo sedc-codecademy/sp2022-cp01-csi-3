@@ -14,6 +14,7 @@ import TermsOfService from './components/UI/TermsOfService/TermsOfService';
 import NotFound404 from './components/UI/NotFound404/NotFound404';
 import TradingChart from './components/UI/TradingChart/TradingChart';
 import Market from './components/UI/Market/Market';
+import CryptoDetails from './components/Widgets/CryptoDetails/CryptoDetails';
 import { Grid } from '@mui/material';
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
 					<Route path='/terms-of-service' element={<TermsOfService />} />
 					<Route path='/trading-chart' element={<TradingChart />} />
 					<Route path='/market' element={<Market/>} />
+					<Route path='/crypto-details' element={<CryptoDetails/>} />
 					<Route path='*' element={<NotFound404 />} />
 				</Routes>
 				</Grid>

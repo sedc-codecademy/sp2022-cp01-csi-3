@@ -1,0 +1,26 @@
+.Header-Container{
+    background-color: rgb(182, 182, 182);
+
+}
+
+.money-text{
+   margin-left: 2em; ;
+}
+
+h1{
+    margin-left: 0.7em;
+}
+
+.Title {
+
+    display: flex;
+    align-items: center;
+    justify-items: normal;
+    background-color: rgb(153, 153, 153);
+}
+
+.my-chart.line {
+    height: 200px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
