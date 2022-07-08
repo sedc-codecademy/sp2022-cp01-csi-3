@@ -8,6 +8,8 @@ import Profile from './components/UI/Profile/Profile';
 import SignUp from './components/UI/SignUp/SignUp';
 import LogIn from './components/UI/LogIn/LogIn';
 import About from './components/UI/About/About';
+import Contact from './components/UI/Contact/Contact';
+import Privacy from './components/UI/Privacy/Privacy';
 import TermsOfService from './components/UI/TermsOfService/TermsOfService';
 import NotFound404 from './components/UI/NotFound404/NotFound404';
 import TradingChart from './components/UI/TradingChart/TradingChart';
@@ -29,6 +31,8 @@ function App() {
 					<Route path='/log-in' element={<LogIn />} />
 					<Route path='/sign-up' element={<SignUp />} />
 					<Route path='/about' element={<About />} />
+					<Route path='/contact' element={<Contact />} />
+					<Route path='/privacy' element={<Privacy />} />
 					<Route path='/terms-of-service' element={<TermsOfService />} />
 					<Route path='/trading-chart' element={<TradingChart />} />
 					<Route path='/market' element={<Market/>} />

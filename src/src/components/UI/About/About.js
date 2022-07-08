@@ -23,10 +23,6 @@ const Item = styled(Paper)(({ theme }) => ({
 //   ); 
 // }; 
 
-function handleClick () {
-  console.log("TEST");
-}
-
 const About = () => (
   <div className="About">
     <Box sx={{ flexGrow: 1 }} className="Container">
@@ -57,7 +53,7 @@ const About = () => (
                 <li className="ListItem">Make transactions</li>
                 <li className="ListItem">Advanced crypto use-cases</li>
               </ul>
-              <Button variant="contained" onClick={handleClick}>
+              <Button variant="contained">
                   Learn More →
               </Button>
             </Item>

@@ -1,7 +1,10 @@
 .Footer {
     background-color: #3f51b5;
     color:  white;
-    height: 100px;
+    padding-left: 0% !important;
+    padding-top: 0% !important;
+    padding-bottom: 1% !important;
+    margin-top: 40px !important;
 }
 
 .heading{
@@ -10,7 +13,7 @@
     text-align: left;
 
     margin-bottom: 1.5%;
-    margin-top: 0%;
+    margin-top: 5%;
 }
 
 .text {
@@ -43,7 +46,4 @@
     opacity: 0.35;
     margin-top: 10px;
     text-align: center;
-}
-#footerBox{
-    padding: 0px;
 }
