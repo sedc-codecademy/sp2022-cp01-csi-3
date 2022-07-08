@@ -7,7 +7,7 @@ import LockOpenOutlinedIcon from '@mui/icons-material/LockOpenOutlined';
 
 const LogIn = () => {
   
-  const logInStyle={padding:20,height:"60vh",width:280,margin:"20px auto"}
+  const logInStyle={padding:20,width:280,margin:"20px auto"}
   const iconStyle={backgroundColor:'#3f51b5'} 
   const loginButton={backgroundColor:'#3f51b5',color:'#ffffff',margin:"10px auto"}
   return(

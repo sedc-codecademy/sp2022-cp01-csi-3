@@ -8,6 +8,7 @@ body {
 }
 
 .Box {
+    margin-top: -40px !important;
 }
 
 .Item {
@@ -17,7 +18,7 @@ body {
     margin-right: 50px !important;
     margin-bottom: 30px !important;
     /* opacity: 0.5 !important; */
-    border: solid rgb(25 118 210) 0.3rem;
+    border: solid rgb(63 81 181) 0.3rem;
 
 }
 
@@ -28,7 +29,7 @@ body {
 .infoItem {
     background: none !important;
     margin-top: 50px !important;
-    margin-bottom: 50px !important;
+    margin-bottom: 80px !important;
 }
 
 .span {
@@ -46,6 +47,8 @@ body {
 .paragraph {
     color: rgb(203, 231, 255);
     padding-right: 300px;
+
+    margin: 0%;
 }
 
 .Icon {

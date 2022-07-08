@@ -5,8 +5,11 @@
     flex: 25%;
 }
 .profileInfos{
+    display: flex;
+    flex-direction: column;
     flex: 75%;
 }
+
 .floatingBar{
     display: flex;   
     flex-direction: column;

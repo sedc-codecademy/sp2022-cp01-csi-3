@@ -53,7 +53,7 @@ export default function Navbar() {
 						</Typography>
 					</NavLink>
 					<div className="dispalyLeftLogin" >
-					<NavLink to={'/log-in'} className="link rightSide" style={({ isActive }) =>
+					<NavLink to={'/log-in'} className="link" style={({ isActive }) =>
 						isActive
 							? {
 								backgroundColor: 'rgba(143, 255, 255, 0.400)',
@@ -65,7 +65,7 @@ export default function Navbar() {
 							Log In
 						</Typography>
 					</NavLink>
-					<NavLink to={'/sign-up'} className="link rightSide" id="signUpButton" style={({ isActive }) =>
+					<NavLink to={'/sign-up'} className="link" id="signUpButton" style={({ isActive }) =>
 						isActive
 							? {
 								backgroundColor: 'rgba(143, 255, 255, 0.400)',

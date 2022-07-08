@@ -6,7 +6,12 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import './Footer.css';
 
 export default function Footer() {
-  return <footer>
+  return <footer style={{
+	  position: document.body.scrollHeight > document.body.clientHeight ? console.log("does have") : console.log("dosenthave"),
+	  left: 0,
+	  bottom: 0,
+	  right: 0,
+  }}>
     <Box className='Footer' px={{xs:3, sm:8}} 
     py={{xs:5,sm:8}}>
       <Container maxWidth="lg">
@@ -14,23 +19,24 @@ export default function Footer() {
             <Grid item xs={12} sm={4}>
               <Box className="Box"><p className='heading'>Help</p></Box>
               <Box>
-                <Link href="/" color="inherit" className='Link'>
+                <Link href="/contact" color="inherit" className='Link'>
                 <p className='text'>⮞&nbsp;&nbsp;Contact</p>
                 </Link>
               </Box>
               <Box>
-                <Link href="/" color="inherit" className='Link'>
-                <p className='text'>⮞&nbsp;&nbsp;Support</p>
+                <Link href="/privacy" color="inherit" className='Link'>
+                <p className='text'>⮞&nbsp;&nbsp;Privacy</p>
                 </Link>
               </Box>
               <Box>
-                <Link href="/" color="inherit" className='Link'>
-                <p className='text'>⮞&nbsp;&nbsp;Privacy</p>
+                <Link href="/terms-of-service" color="inherit" className='Link'>
+                <p className='text'>⮞&nbsp;&nbsp;Terms of Service</p>
                 </Link>
               </Box>
             </Grid>
             <Grid item xs={12} sm={4}>
               <Box  className="Box"><p className='heading'>Account</p></Box>
+
               <Box>
                 <Link href="/log-in" color="inherit" className='Link'>
                 <p className='text'>⮞&nbsp;&nbsp;Login</p>

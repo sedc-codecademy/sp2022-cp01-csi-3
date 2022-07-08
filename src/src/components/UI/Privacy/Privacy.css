@@ -1,0 +1,39 @@
+.Privacy {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(235, 235, 235);
+}
+
+.privacy-policy {
+    margin-left: 230px !important;
+    margin-right: 230px !important;
+    text-align: left !important;
+}
+
+.meta {
+    font-size: 1.2rem;
+}
+
+.privacy-policy-title {
+    font-size: 40px;
+    color: aliceblue !important;
+
+    background-color: #3f51b5 !important;
+
+    margin-left: 450px !important;
+    margin-right: 450px !important;
+    margin-top: 30px !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    border-radius: 12px;
+
+    display: flex;
+    justify-content: center;
+}
+
+p .About{
+    font-size: 1.2rem;
+    color: black;
+}
