@@ -104,7 +104,7 @@ function MarketsTable(prop) {
                   <TableCell>{data.high_24h}</TableCell>
                   <TableCell>${data.market_cap} M</TableCell>
                   <TableCell>
-                    <a href="/detail">Detail</a>
+                    <a href="/crypto-details">Detail</a>
                   </TableCell>
                   <TableCell>
                     <a href="https://www.binance.com/en/markets">Trade</a>
