@@ -24,7 +24,6 @@ const SignUp = () => {
         <TextField label="Confirm password" fullWidth required type="password"></TextField>
         <Button type="submit" style={loginButton} fullWidth href="/profile">Join now</Button> 
         <Typography >
-            
             <p>Already registered? <Button id="buttonLoginInRegister" href='/log-in'>Log in</Button> </p>             
           </Typography>       
       </Paper>

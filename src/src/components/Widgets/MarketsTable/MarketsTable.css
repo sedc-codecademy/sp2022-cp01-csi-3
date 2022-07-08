@@ -1,0 +1,46 @@
+.Container-Table{
+    margin-left: 8.5em;
+    margin-right: 8.5em;
+}
+
+.TableHead-Container{
+    background-color: #3f51b5;
+    font-weight:bold;
+    color: white !important;
+}
+
+.tableCell {
+    color: white !important;
+    font-size: 15px !important;
+}
+
+.Container-Table a {
+    color: #3f51b5;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.TBody tr:hover{
+    background-color: rgb(226, 226, 226);
+}
+
+.Filter{
+    border: #3f51b5 solid 0.15rem;
+    background-color: aliceblue;
+
+    display: flex;
+    align-items:flex-end;
+    margin-left:9em;
+    margin-bottom:1em;
+    margin-right: 1270px;
+}
+
+.Filter select{
+    width: 7em;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.8;
+    border: none;
+    font-weight:500;
+    font-size: 0.9em;
+}
+

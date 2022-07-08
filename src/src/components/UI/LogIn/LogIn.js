@@ -27,7 +27,7 @@ const LogIn = () => {
                         Don't have an account? <br /> Join now it's free!          
           <Button type="submit" style={loginButton} fullWidth href="/sign-up">Register</Button>
         </Typography>
-      </Paper>
+      </Paper> 
     </Grid>
   </div>
   );
