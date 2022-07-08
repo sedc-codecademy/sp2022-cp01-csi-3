@@ -20,6 +20,12 @@ const videos = [
 		description: "What are NFT's? NFT's are an innovation in the blockchain/cryptocurrency space that allows you to track who owns a particular item.",
 		url: "https://www.youtube.com/watch?v=FkUn86bH34M&ab_channel=SimplyExplained"
 	}
+	// {
+	// 	lable: "How Cryptocurrency ACTUALLY works",
+	// 	description: "Bitcoin, Dogecoin, Ethereum, NFT's, all explained in one simple guide!  Do consider subscribing if you enjoyed! ",
+	// 	url: "https://www.youtube.com/watch?v=rYQgy8QDEBI"
+	// }
+
 ];
 
 const VideoCardSlider = () => (

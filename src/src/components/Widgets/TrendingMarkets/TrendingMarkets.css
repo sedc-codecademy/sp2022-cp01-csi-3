@@ -1,0 +1,56 @@
+
+.Table-Container {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(243, 242, 240);
+
+    margin-left:2em;
+
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 0.2em;
+}
+
+.Table-Container td {
+
+   font-size: 20px;
+   padding: 0.2em;
+   font-size: 1em;
+   margin-right:2em;
+   padding-left: 12px;
+}
+
+.Table-Container:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+caption{
+    color: #3f51b5 !important;
+}
+.logo {
+    width: 2.3em;
+}
+
+.Container{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: left;
+
+    background-color: rgb(243, 242, 240);
+    padding-bottom: 2.5em;
+    padding-top:1.5em;
+    margin-bottom: 2em;
+    margin-top: 0%;
+
+    border: #3f51b5 solid 0.3rem;
+    border-width: 0rem 0rem 0.3rem 0rem;
+}
+
+
+.Table-Container caption {
+
+    font-size: 0.8em;
+    text-align: left;
+    font-weight: bold;
+    color: gray;
+} 

@@ -1,2 +1,10 @@
 .VideoCardSlider {
+    background-color: #141414;
+    /* border: #3f51b5 solid 0.3rem; */
+
+    padding-bottom: 45px;
+    margin-left: -100px;
+    margin-right: -100px;
+
+    border-radius: 8px;
 }

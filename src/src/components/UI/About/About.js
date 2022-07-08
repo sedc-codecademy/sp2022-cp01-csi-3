@@ -25,7 +25,7 @@ const Item = styled(Paper)(({ theme }) => ({
 
 const About = () => (
   <div className="About">
-    <Box sx={{ flexGrow: 1 }} className="Container">
+    <Box sx={{ flexGrow: 1 }} className="aboutContainer">
     <Grid className="Grid">
         <Item className='Item'>
         <img className="Icon" src='https://cdn-icons-png.flaticon.com/512/991/991959.png'></img>
