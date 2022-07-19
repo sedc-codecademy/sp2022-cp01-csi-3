@@ -1,37 +1,78 @@
-.Home {
-	background-image: url("https://i.imgur.com/4JbbuGa.jpeg");
-	width: 100%;
-  	height: 100%;
+.Simulation {
+	padding-bottom: 30px;
 }
 
-.container {
-	margin-top: 50px;
-  	display: flex;
-  	padding: 0 55px;
-	margin-top: 50px;
+#HomeContainer {
+	padding-top: 50px;
+	
+	margin-left: 50px;
+	margin-right: 50px;
+}
+	
+#HomeContainer img {
+	float: right !important;
+}  
+
+#HomeContainer p {
+	color: white;
+	text-align: center;
+
+	padding-left: 30px;
+	padding-right: 550px;
+	padding-bottom: 30px;
 }
 
-.title {
-	font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-	font-weight: bolder;
-	font-size: larger;
-	font-size: 2rem;
-	color: rgba(73, 70, 70, 0.628);
+#HomeContainer h1 {
+	font-size: 50px;
+	font-family: monospace;
+	letter-spacing: 5px;
+	color: #495abb;
+
+	padding-top: 50px;
+	padding-bottom: 30px;
 }
 
-hr {
-	margin: 0.7rem 0;
-	border: none;
-	/* border: solid #1976d2 0.15rem;
-	background-color: #1976d2;
-	border-radius: 5px; */
-	width: 100%;
+.HomeSticker {
+	height: 500px;
+	width: 500px;
 }
-#sliderBackground{
+
+.HomeContainer {
+	margin-left: 70px;
+	margin-right: 70px;
+
+}
+
+.HomeItem {
+	background-color: transparent !important;
+	background-color: #495abb1b !important;
+
+	border-radius: 15px;
+
+	margin-left: 10px;
+	margin-right: 10px;
+
+	width: 400px;
+	height: 200px;
+
 	display: flex;
-	margin: 0px;
-	margin-top: 30px;
-	background-color: rgb(20, 20, 20);
-	border-radius: 20px;	
-	padding: 0px;
+	justify-content: center;
+    align-items: center;
+}
+
+.HomeItem p {
+	color: white;
+	text-align: center;
+	
+}
+
+.HomeItem span {
+	font-weight: bold;
+	font-style: italic;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: #5f76fc;
+}
+
+#HomeGetStartedButton {
+	background-color: #495abb;
 }

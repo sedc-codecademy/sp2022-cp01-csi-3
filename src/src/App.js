@@ -16,6 +16,7 @@ import TradingChart from './components/UI/TradingChart/TradingChart';
 import Market from './components/UI/Market/Market';
 import CryptoDetails from './components/Widgets/CryptoDetails/CryptoDetails';
 import { Grid } from '@mui/material';
+import Simulation from './components/UI/Simulation/Simulation';
 
 function App() {
 	return (
@@ -34,6 +35,7 @@ function App() {
 					<Route path='/about' element={<About />} />
 					<Route path='/contact' element={<Contact />} />
 					<Route path='/privacy' element={<Privacy />} />
+					<Route path='/simulation' element={<Simulation/>} />
 					<Route path='/terms-of-service' element={<TermsOfService />} />
 					<Route path='/trading-chart' element={<TradingChart />} />
 					<Route path='/market' element={<Market/>} />

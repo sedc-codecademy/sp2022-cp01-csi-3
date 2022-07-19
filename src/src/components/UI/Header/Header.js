@@ -28,6 +28,18 @@ export default function Navbar() {
 							Home
 						</Typography>
 					</NavLink>
+					<NavLink to={'/simulation'} className="link" style={({ isActive }) =>
+						isActive
+							? {
+								backgroundColor: 'rgba(143, 255, 255, 0.400)',
+								color: 'rgb(255, 255, 255)',
+							}
+							: {}
+					}>
+						<Typography variant="h6" color="inherit">
+							Simulation
+						</Typography>
+					</NavLink>
 					<NavLink to={'/market'} className="link" style={({ isActive }) =>
 						isActive
 							? {

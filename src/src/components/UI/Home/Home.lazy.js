@@ -1,11 +1,12 @@
 import React, { lazy, Suspense } from 'react';
 
-const LazyHome = lazy(() => import('./Home'));
+const LazySimulation = lazy(() => import('./Home'));
 
 const Home = props => (
   <Suspense fallback={null}>
-    <LazyHome {...props} />
+    <LazySimulation {...props} />
   </Suspense>
 );
 
 export default Home;
+

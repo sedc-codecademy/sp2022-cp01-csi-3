@@ -53,7 +53,7 @@ const About = () => (
                 <li className="ListItem">Make transactions</li>
                 <li className="ListItem">Advanced crypto use-cases</li>
               </ul>
-              <Button variant="contained">
+              <Button variant="contained" id='AboutLearnMoreButton'>
                   Learn More →
               </Button>
             </Item>
@@ -66,7 +66,7 @@ const About = () => (
                 <li className="ListItem">Investing vs Trading</li>
                 <li className="ListItem">Technical & Fundamental Analysis</li>
               </ul>
-              <Button variant="contained">
+              <Button variant="contained" id='AboutLearnMoreButton'>
                   Learn More →
               </Button>
             </Item>
@@ -79,7 +79,7 @@ const About = () => (
                 <li className="ListItem">Trading, Defi & Mining</li>
                 <li className="ListItem">Hoddling, DCA & Passive Interest</li>
               </ul>
-              <Button variant="contained">
+              <Button variant="contained" id='AboutLearnMoreButton'>
                   Learn More →
               </Button>
             </Item>
