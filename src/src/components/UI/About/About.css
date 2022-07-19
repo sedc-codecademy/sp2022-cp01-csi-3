@@ -12,7 +12,7 @@ body {
 }
 
 .Item {
-    background-color: aliceblue !important;
+    background-color: rgb(240, 248, 255) !important;
     color: black !important;
     margin-left: 50px !important;
     margin-right: 50px !important;
@@ -63,4 +63,8 @@ body {
 
 p {
     font-size: 20px;
+}
+
+#AboutLearnMoreButton {
+    background-color: #495abb;
 }
