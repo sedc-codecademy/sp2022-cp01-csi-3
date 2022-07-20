@@ -128,8 +128,8 @@ function About () {
           </div>}
           {dp2 && <div id="onClickDiv">
             <h3 className="HiddenDivHeading">HOW TO TRADE CRYPTO</h3>
-            <p>When we researched cryptocurrency, one of the top asked questions was 
-            <i>"How can I trade cryptocurrency"</i>.<br></br><br></br> 
+            <p>When we researched cryptocurrency, one of the top asked questions was
+            <i> "How can I trade cryptocurrency"</i>.<br></br><br></br> 
             This shouldn’t be a surprise. Cryptocurrency is an ideal asset to trade because its short-term price is volatile. 
             In other words, price changes quickly and by significant amounts on a regular basis.<br></br><br></br>
             A volatile asset presents a lot of opportunity for traders who make money by exploiting price movement, 
