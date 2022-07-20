@@ -24,7 +24,7 @@ const Detail = () => {
     <div className="Detail">
       <DetailHeader></DetailHeader>
       <DetailChart></DetailChart>
-      <SideInfo data={Cryptodata}></SideInfo>
+      {/* <SideInfo data={Cryptodata}></SideInfo> */}
     </div>
   );
 };

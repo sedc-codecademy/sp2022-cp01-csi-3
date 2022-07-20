@@ -15,7 +15,7 @@ export default function Simulation() {
 	}
 
   return (
-  <div className="Home">
+  <div className="Simulation">
 		<Grid container spacing={5} className>
 			<Grid item xs={0} sm={1} md={2}></Grid>
 			<Grid item xs={12} sm={10} md={8} id="sliderBackground">
