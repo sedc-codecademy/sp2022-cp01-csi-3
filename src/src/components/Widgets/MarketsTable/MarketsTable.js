@@ -8,6 +8,11 @@ import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import "./MarketsTable.css";
 
+import Button from '@mui/material/Button';
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
+
+
 function MarketsTable(prop) {
   const [value, setValue] = useState([]);
 
@@ -59,14 +64,15 @@ function MarketsTable(prop) {
       <div className="Filter">
         <select onClick={filterComponents} className="FilterBy" name="FilterBy">
           <option value="#" disabled selected>
-            FilterBy
+            Filter By
           </option>
           <option value="Name">Name</option>
+          <option value="Price">Price</option>
           <option value="MarketCap">Market Cap</option>
           <option value="24Change">24 Change</option>
-          <option value="Price">Price</option>
         </select>
       </div>
+      
       <div className="Container-Table">
         <TableContainer component={Paper}>
           <Table sx={{ minWidth: 650 }} aria-label="simple table">

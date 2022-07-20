@@ -1,5 +1,6 @@
-body {
+.About {
     background-image: url("https://i.imgur.com/Yzh6yqd.jpeg");
+    background-attachment: fixed;
     background-size: 100%;
 }
 
@@ -67,4 +68,38 @@ p {
 
 #AboutLearnMoreButton {
     background-color: #495abb;
+}
+
+#test {
+    color:  red !important;
+}
+
+#onClickDiv {
+    background: transparent;
+    background-color: #495abb25 !important;
+    border: solid rgb(63 81 181) 0.3rem;
+    /* background-color: rgb(240, 248, 255) !important; */
+    color: rgb(255, 255, 255) !important;
+
+    margin-left: 75px !important;
+    margin-right: 50px !important;
+    margin-bottom: 30px !important;
+
+    padding: 20px;
+    text-align: justify;
+
+    height: auto;
+    width: auto;
+
+    font-size: 20px;
+}
+
+.HiddenDivHeading {
+    text-transform: capitalize;
+    text-align: center;
+    color: #495abb;
+}
+
+.About h4 {
+    color: #495abb;
 }

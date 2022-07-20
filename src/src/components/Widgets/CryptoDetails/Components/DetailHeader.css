@@ -1,6 +1,6 @@
 .Header-Container{
     background-color: rgb(182, 182, 182);
-
+    
 }
 
 .money-text{
@@ -16,7 +16,9 @@ h1{
     display: flex;
     align-items: center;
     justify-items: normal;
-    background-color: rgb(153, 153, 153);
+    /* background-color: rgb(153, 153, 153); */
+    background-color: aliceblue;
+
 }
 
 .my-chart.line {

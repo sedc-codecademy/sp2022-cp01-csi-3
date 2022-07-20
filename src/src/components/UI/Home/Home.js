@@ -17,7 +17,7 @@ const Item = styled(Paper)(({ theme }) => ({
   }));
 
 const Home = () => (
-	<div className="Simulation">
+	<div className="Home">
 		<div id='HomeContainer'>
 			<img src='https://imgur.com/tHEuCWK.png' className='HomeSticker'></img>
 			<h1>LEARN. INVEST. EARN.</h1>
