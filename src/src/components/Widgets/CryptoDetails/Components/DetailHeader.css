@@ -1,6 +1,11 @@
 .Header-Container{
-    background-color: rgb(182, 182, 182);
-    
+    background-color: aliceblue;
+
+    padding-left: 15px;
+    padding-right: 15px;
+
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 .money-text{
@@ -12,7 +17,6 @@ h1{
 }
 
 .Title {
-
     display: flex;
     align-items: center;
     justify-items: normal;
