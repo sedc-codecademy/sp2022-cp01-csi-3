@@ -26,8 +26,10 @@
 	font-weight: bold;
 }
 
-h3 {
+.StartTrading h3 {
+	padding-left: 23%;
 	margin: 0 0;
+	font-size: 30px;
 }
 
 .button {

@@ -8,7 +8,7 @@ const StartTrading = () => (
   <div className="StartTrading">
 	<Grid item xs={12} >
 		<div className='title'>
-			<h3>Start Trading, Investing, Simulation...</h3>
+			<h3>Start Simulation</h3>
 		</div>
 	</Grid>
 	<Grid item xs={12}>
