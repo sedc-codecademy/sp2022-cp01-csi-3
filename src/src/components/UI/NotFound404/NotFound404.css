@@ -1,5 +1,20 @@
 .NotFound404 {
-	   background: #33cc99;
+    background-image: url('https://imgur.com/T1yU5E6.jpg') !important;
+    background-size: 100% !important;
+    height: 880px;
+}
+
+#Error404Button {
+    margin-top: 430px;
+    margin-right: 950px;
+    padding: 10px 20px;
+
+    background-color: #012178;
+    color: white;
+
+    border-radius: 40px;
+}
+	   /* background: #33cc99;
                 color:#fff;
                 font-family: 'Open Sans', sans-serif;
                 height:800px;
@@ -40,7 +55,7 @@
                 position: relative;
                 display: inline-block;
                 margin: 19px 0px 0px 0px;
-                /* top: 256.301px; */
+                top: 256.301px;
                 z-index: 3;
                 width: 100%;
                 line-height: 1.2em;
@@ -50,4 +65,4 @@
             .right{
                 float:right;
                 width:60%;
-            }
+            } */

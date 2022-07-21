@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const NotFound404 = () => (
 	<div className='NotFound404'>
 		<div className='c'>
-			<div className='_404'>404</div>
+			{/* <div className='_404'>404</div>
 			<br />
 			<hr />
 			<br />
@@ -15,10 +15,10 @@ const NotFound404 = () => (
 			<br />
 			<div className='_2'>WAS NOT FOUND</div>
 			<br />
-			<br />
+			<br /> */}
 			<Link to={''} style={{textDecoration: 'none'}}>
-				<Button variant="contained">
-					Home
+				<Button variant="contained" id='Error404Button'>
+					Go Home
 				</Button>
 			</Link>
 		</div>
