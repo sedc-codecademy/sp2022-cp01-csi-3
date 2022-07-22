@@ -7,11 +7,11 @@ import SettingsApplicationsIcon from '@mui/icons-material/SettingsApplications';
 
 
 export const SidebarLink = [  
-  {
-    title:"Notifications",
-    icon: <NotificationsActiveIcon/>,
-    link: "/profile/statistics"
-  },
+  // {
+  //   title:"Notifications",
+  //   icon: <NotificationsActiveIcon/>,
+  //   link: "/profile/statistics"
+  // },
   {
     title:"Profile",
     icon: <AccountBoxIcon/>,

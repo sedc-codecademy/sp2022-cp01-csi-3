@@ -1,15 +1,18 @@
-import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
 import React from "react";
 import Box from '@mui/material/Box';
-import PropTypes from "prop-types";
 import "./Profile.css";
 import Sidebar from "./ProfileComponenets/Sidebar/Sidebar";
 import { Avatar,Button,TextField } from "@material-ui/core";
+import FormGroup from '@mui/material/FormGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import Checkbox from '@mui/material/Checkbox';
+import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
+import PropTypes from "prop-types";
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import LogIn from '../LogIn/LogIn'
 import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
 import ArrowCircleDownIcon from '@mui/icons-material/ArrowCircleDown';
-import { red } from "@mui/material/colors";
+import { indigo } from "@mui/material/colors";
 
 function Profile(){
   const withdrawButton = { margin:"0px 5px 0px 0px",background:"rgba(253,106,124,255)",color:"white" 
@@ -35,7 +38,8 @@ function Profile(){
               <Box className='ProfileBox' component="form" noValidate autoComplete="off" sx={{
                 '& > :not(style)': { m: 1, width: '25ch' },
               }}>
-              <TextField id="outlined-basic" label="First Name" variant="outlined" />
+              <TextField id="outlined-basic" label="First Name" variant="outlined" sx={{
+          color: indigo[500]}} />
               <TextField id="outlined-basic" label="Last Name" variant="outlined" />
               </Box>
               <Box className='ProfileBox' component="form" noValidate autoComplete="off" sx={{
@@ -43,8 +47,31 @@ function Profile(){
                 }}>
                 <TextField id="outlined-basic" label="Email" variant="outlined" />
               </Box>
+              <hr></hr>
+                <h2>Notifications</h2>
+                <FormGroup className="checkboxForm">
+                  <FormControlLabel control={<Checkbox defaultChecked sx={{
+          color: indigo[500], '&.Mui-checked': {
+          color: indigo[500],
+          },}} />} label="Withdraw Activity" />
+                  <FormControlLabel control={<Checkbox defaultChecked sx={{
+          color: indigo[500], '&.Mui-checked': {
+          color: indigo[500],
+          },}} />} label="Weekly Report" />
+                  <FormControlLabel control={<Checkbox defaultChecked sx={{
+          color: indigo[500], '&.Mui-checked': {
+          color: indigo[500],
+          },}} />} label="Payment Success" />
+                </FormGroup>
+              <hr></hr>
+              <Button variant="contained" id='DiscardChangesButton'>
+                Discard Changes
+              </Button><Button variant="contained" id='SaveChangesButton'>
+                Save Changes
+              </Button>
             </div>
             <span id="verticalLine"></span>
+            
             {/* <div className="buttonsAndBalance">
               <h4 id="balanceDetails">Balance details:</h4>
               <div id="buttons">
