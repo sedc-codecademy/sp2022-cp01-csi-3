@@ -15,28 +15,6 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
-// function Hide() {
-//   return (
-//     <div>
-//       <Mycomp />
-//     </div>
-//   );
-// }
-
-// function Mycomp() {
-//   const [dp, setDp] = useState(false);
-// }
-
-
-      
-// const ListComponent = () => { 
-//   return ( 
-//     <div> 
-//       <h1>TEST</h1> 
-//     </div> 
-//   ); 
-// }; 
-
 function About () {
   const [dp1, setDp1] = useState(false);
   const [dp2, setDp2] = useState(false);
@@ -73,8 +51,21 @@ function About () {
                 <li className="ListItem">Advanced crypto use-cases</li>
               </ul>
               <Button variant="contained" id='AboutLearnMoreButton'
-                  onClick={() => setDp1(!dp1)}>
-                  Learn More →
+                  onClick={() => {
+                    if(!dp1) {
+                      if(!dp1) {setDp1(!dp1)}
+                      if(!dp1 && dp2){
+                        setDp2(!dp2);
+                        setDp1(!dp1)
+                      }
+                      if(!dp1 && dp3){
+                        setDp3(!dp3);
+                        setDp1(!dp1)
+                      }
+                    }
+                    else{setDp1(!dp1)}
+                    }}>
+                    Learn More →
               </Button>
             </Item>
           </Grid>
@@ -87,8 +78,21 @@ function About () {
                 <li className="ListItem">Technical & Fundamental Analysis</li>
               </ul>
               <Button variant="contained" id='AboutLearnMoreButton' type="button"
-                  onClick={() => setDp2(!dp2)}>
-                  Learn More →
+                  onClick={() => {
+                    if(!dp2) {
+                      if(!dp2) {setDp2(!dp2)}
+                      if(!dp2 && dp1){
+                        setDp1(!dp1);
+                        setDp2(!dp2)
+                      }
+                      if(!dp2 && dp3){
+                        setDp3(!dp3);
+                        setDp2(!dp2)
+                      }
+                    }
+                    else{setDp2(!dp2)}
+                    }}>
+                    Learn More →
               </Button>
             </Item>
           </Grid>
@@ -101,7 +105,20 @@ function About () {
                 <li className="ListItem">Hoddling, DCA & Passive Interest</li>
               </ul>
               <Button variant="contained" id='AboutLearnMoreButton'
-                onClick={() => setDp3(!dp3)}>
+                onClick={() => {
+                  if(!dp3) {
+                    if(!dp3) {setDp3(!dp3)}
+                    if(!dp3 && dp1){
+                      setDp1(!dp1);
+                      setDp3(!dp3)
+                    }
+                    if(!dp3 && dp2){
+                      setDp2(!dp2);
+                      setDp3(!dp3)
+                    }
+                  }
+                  else{setDp3(!dp3)}
+                  }}>
                   Learn More →
               </Button>
             </Item>
@@ -189,9 +206,3 @@ About.propTypes = {};
 About.defaultProps = {};
 
 export default About;
-
-// export default function ResponsiveGrid() {
-//   return (
-//     <
-//   );
-// }
