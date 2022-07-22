@@ -1,27 +1,34 @@
 .sidebar{
     background: url('https://i.imgur.com/fgBXydj.jpg') !important; 
+    font-weight: bold;   
+    color: white;
     display: flex ;
+
     width: 15%;   
     height: 120vh; 
+
     padding-right: 0.8rem;
     padding-left: 0.3rem;
+
     background: transparent;
     background-color: #3f51b534;
-    color: white;
-    font-weight: bold;   
+
     border-right: solid rgb(63 81 181) 0.25rem;
 }
 .SidebarList{
     height: 100%;
     width: 100%;
+
     padding-inline-start: 0%;  
     text-align: left; 
 }
 .SidebarList .row{
   width: 100%;
-  height: 30px;  
+  height: 40px;  
   list-style-type: none ;
   /* margin: 0%; */
+  margin-bottom: 10px;
+
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -30,14 +37,20 @@
 }
 .SidebarList .row:hover{
   cursor: pointer;
-  background-color: rgb(255, 255, 255);
-  border-radius: 30px;
-  color: black;
+  border-left: solid rgb(63 81 181) 0.25rem;
+  background-color: rgba(63, 81, 181, 0.27);
+
+  /* background-color: rgb(255, 255, 255); */
+  /* border-radius: 30px; */
+  /* color: black; */
 }
 .SidebarList #active{
-  background-color: rgb(255, 255, 255);
+  border-left: solid rgb(63 81 181) 0.25rem;
+  background-color: rgba(63, 81, 181, 0.27);
+  
+  /* background-color: rgb(255, 255, 255);
   border-radius: 30px;
-  color: black;
+  color: black; */
 }
 .row #icon{
   flex: 30%;
@@ -60,6 +73,7 @@
 }
 
 .avatarAndEmailInfo {
+  padding-top: 10px;
   margin-bottom: 35px;
 }
 

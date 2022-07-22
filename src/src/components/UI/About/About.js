@@ -200,7 +200,6 @@ function About () {
   </div>
 );};
 
-
 About.propTypes = {};
 
 About.defaultProps = {};
