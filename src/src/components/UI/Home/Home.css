@@ -60,6 +60,7 @@
 	display: flex;
 	justify-content: center;
     align-items: center;
+	position: relative; /* MUST FOR ANIMATION */
 }
 
 .HomeItem p {
@@ -77,4 +78,91 @@
 
 #HomeGetStartedButton {
 	background-color: #495abb;
+}
+/* -------------------------------------------------------------------------------------------------------------- */
+/* BOX ANIMATION */
+.HomeItem::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 2px solid transparent;
+}
+.HomeItem:hover::before {
+    animation: animate 0.5s linear forwards !important;
+}
+@keyframes animate {
+    0% {
+        width: 0;
+        height: 0;
+        border-top-color: #495abb;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+ 
+    50% {
+        width: 100%;
+        height: 0;
+        border-top-color: #495abb;
+        border-right-color: #495abb;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+ 
+    100% {
+        width: 100%;
+        height: 100%;
+        border-top-color: #495abb;
+        border-right-color: #495abb;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+}
+
+.HomeItem::after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 2px solid transparent;
+}
+ 
+.HomeItem:hover::after {
+    animation: animates 0.5s linear forwards;
+}
+ 
+@keyframes animates {
+    0% {
+        width: 0;
+        height: 0;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: #495abb;
+    }
+ 
+    50% {
+        width: 0;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: #495abb;
+        border-left-color: #495abb;
+    }
+ 
+    100% {
+        width: 100%;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: #495abb;
+        border-left-color: #495abb;
+    }
 }

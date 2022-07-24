@@ -56,7 +56,7 @@ const Home = () => (
       </Grid>
     </Box>
 	</div>
-  );
+  ); 
   
 Home.propTypes = {};
   

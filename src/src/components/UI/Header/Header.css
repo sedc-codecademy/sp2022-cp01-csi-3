@@ -23,9 +23,9 @@
 	margin: 0 0.5rem;
 }
 
-.link:hover {
+/* .link:hover {
 	background-color: rgba(80, 182, 255, 0.545);
-}
+} */
 
 .navBar #signUpButton{
 	background-color: rgba(253,106,124,255);
