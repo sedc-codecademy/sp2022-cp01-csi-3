@@ -28,7 +28,9 @@ function TrendingMarkets(prop) {
               </td>
               <td>{data.name}</td>
               <td>{data.current_price}</td>
-              <td>{data.price_change_percentage_24h.toFixed(2)}</td>
+              {data.price_change_percentage_24h.toFixed(2) < 0 && <td id="BellowPercent">{data.price_change_percentage_24h.toFixed(2)}%</td>}
+              {data.price_change_percentage_24h.toFixed(2) > 0 && <td id="AbovePercent">{data.price_change_percentage_24h.toFixed(2)}%</td>}
+              {data.price_change_percentage_24h.toFixed(2) == 0 && <td id="AbovePercent">{data.price_change_percentage_24h.toFixed(2)}%</td>}
             </tr>
           ))}
       </table>
@@ -55,7 +57,9 @@ function TrendingMarkets(prop) {
               </td>
               <td>{data.name}</td>
               <td>{data.current_price}</td>
-              <td>{data.price_change_percentage_24h.toFixed(2)}</td>
+              {data.price_change_percentage_24h.toFixed(2) < 0 && <td id="BellowPercent">{data.price_change_percentage_24h.toFixed(2)}%</td>}
+              {data.price_change_percentage_24h.toFixed(2) > 0 && <td id="AbovePercent">{data.price_change_percentage_24h.toFixed(2)}%</td>}
+              {data.price_change_percentage_24h.toFixed(2) == 0 && <td id="AbovePercent">{data.price_change_percentage_24h.toFixed(2)}%</td>}
             </tr>
           ))}
       </table>
@@ -82,7 +86,9 @@ function TrendingMarkets(prop) {
               </td>
               <td>{data.name}</td>
               <td>{data.current_price}</td>
-              <td>{data.price_change_percentage_24h.toFixed(2)}</td>
+              {data.price_change_percentage_24h.toFixed(2) < 0 && <td id="BellowPercent">{data.price_change_percentage_24h.toFixed(2)}%</td>}
+              {data.price_change_percentage_24h.toFixed(2) > 0 && <td id="AbovePercent">{data.price_change_percentage_24h.toFixed(2)}%</td>}
+              {data.price_change_percentage_24h.toFixed(2) == 0 && <td id="AbovePercent">{data.price_change_percentage_24h.toFixed(2)}%</td>}
             </tr>
           ))}
       </table>
@@ -109,7 +115,9 @@ function TrendingMarkets(prop) {
               </td>
               <td>{data.name}</td>
               <td>{data.current_price}</td>
-              <td>{data.price_change_percentage_24h.toFixed(2)}</td>
+              {data.price_change_percentage_24h.toFixed(2) < 0 && <td id="BellowPercent">{data.price_change_percentage_24h.toFixed(2)}%</td>}
+              {data.price_change_percentage_24h.toFixed(2) > 0 && <td id="AbovePercent">{data.price_change_percentage_24h.toFixed(2)}%</td>}
+              {data.price_change_percentage_24h.toFixed(2) == 0 && <td id="AbovePercent">{data.price_change_percentage_24h.toFixed(2)}%</td>}
             </tr>
           ))}
       </table>

@@ -49,6 +49,8 @@ function Profile(){
               </Box>
               <hr></hr>
                 <h2>Notifications</h2>
+                {/* <hr></hr>
+                <h3>Choose the type of notifications you want to recieve</h3> */}
                 <FormGroup className="checkboxForm">
                   <FormControlLabel control={<Checkbox defaultChecked sx={{
           color: indigo[500], '&.Mui-checked': {

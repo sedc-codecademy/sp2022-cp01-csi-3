@@ -54,3 +54,11 @@
 .Filter option {
     
 }
+
+#BellowPercent {
+    color: red;
+}
+
+#AbovePercent {
+    color: green;
+}

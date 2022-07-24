@@ -24,8 +24,9 @@ function About () {
   <div className="About">
     <Box sx={{ flexGrow: 1 }} className="aboutContainer">
     <Grid className="Grid">
-        <Item className='Item'>
-        <img className="Icon" src='https://cdn-icons-png.flaticon.com/512/991/991959.png'></img>
+        <Item className='WhatIsCryptoContainer'>
+        {/* <img className="Icon" src='https://cdn-icons-png.flaticon.com/512/991/991959.png'></img> */}
+        <img className="Icon" src='https://i.imgur.com/SoIe1rX.png'></img>
           <h1>What is Cryptocurrency?</h1>
           <p>Cryptocurrency is a new kind of internet money. You can use it to buy things online, and you can send it instantly to other users anywhere in the world, needing nothing more than a smartphone and an internet connection.
             Cryptocurrency can be cheaper and more convenient than many existing services like Paypal or Transferwise, if - for example - you regularly send money overseas. Several million people are actively using it today for that purpose.
@@ -37,13 +38,15 @@ function About () {
       </Grid>
       <Grid className='infoGrid'>
         <Item className='infoItem'>
-          <span class="span">€60,000,000</span>
+          <span>€60,000,000</span>
           <p className='paragraph'>What €1 invested in 2009 in Bitcoin is worth in 2022</p>
         </Item>
       </Grid>
       <Grid className="Grid" container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
         <Grid  className="Box" item xs={2} sm={4} md={4}>
-            <Item className='Item'><img className="Icon" src='https://cdn-icons-png.flaticon.com/512/5341/5341448.png'></img>
+            <Item className='Item'>
+              {/* <img className="Icon" src='https://cdn-icons-png.flaticon.com/512/5341/5341448.png'></img> */}
+              <img className="Icon" src='https://i.imgur.com/N9gdHGQ.png'></img>
               <h1>How to use crypto</h1>
               <ul>
                 <li className="ListItem">Secure your crypto</li>
@@ -51,7 +54,7 @@ function About () {
                 <li className="ListItem">Advanced crypto use-cases</li>
               </ul>
               <Button variant="contained" id='AboutLearnMoreButton'
-                  onClick={() => {
+                  onClick={() => { 
                     if(!dp1) {
                       if(!dp1) {setDp1(!dp1)}
                       if(!dp1 && dp2){
@@ -70,7 +73,9 @@ function About () {
             </Item>
           </Grid>
           <Grid className="Box" item xs={2} sm={4} md={4}>
-            <Item className='Item'><img className="Icon" src='https://cdn-icons-png.flaticon.com/512/4285/4285667.png'></img>
+            <Item className='Item'>
+              {/* <img className="Icon" src='https://cdn-icons-png.flaticon.com/512/4285/4285667.png'></img> */}
+              <img className="Icon" src='https://i.imgur.com/HgUStus.png'></img>
               <h1>How to trade crypto</h1>
               <ul>
                 <li className="ListItem">Understanding risk</li>
@@ -97,7 +102,9 @@ function About () {
             </Item>
           </Grid>
           <Grid className="Box" item xs={2} sm={4} md={4}>
-            <Item className='Item'><img className="Icon" src='https://cdn-icons-png.flaticon.com/512/2685/2685027.png'></img>
+            <Item className='Item'>
+              {/* <img className="Icon" src='https://cdn-icons-png.flaticon.com/512/2685/2685027.png'></img> */}
+              <img className="Icon" src='https://i.imgur.com/jtxIRUs.png'></img>
               <h1>How to earn crypto</h1>
               <ul>
                 <li className="ListItem">Earn by Learning & Working</li>
@@ -199,7 +206,6 @@ function About () {
     </Box>
   </div>
 );};
-
 
 About.propTypes = {};
 

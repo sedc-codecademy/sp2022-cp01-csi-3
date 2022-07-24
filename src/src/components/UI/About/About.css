@@ -2,6 +2,7 @@
     background-image: url("https://i.imgur.com/Yzh6yqd.jpeg");
     background-attachment: fixed;
     background-size: 100%;
+    margin-top: -2%;
 }
 
 .aboutContainer {
@@ -13,41 +14,72 @@
 }
 
 .Item {
-    background-color: rgb(240, 248, 255) !important;
-    color: black !important;
+    /* background-color: transparent !important;
+    background-color: rgba(240, 248, 255, 0.118) !important; */
+    /* color: black !important; */
     margin-left: 50px !important;
     margin-right: 50px !important;
     margin-bottom: 30px !important;
-    /* opacity: 0.5 !important; */
-    border: solid rgb(63 81 181) 0.3rem;
+    /* border: solid rgb(63 81 181) 0.3rem; */
 
+    background-color: transparent !important;
+	background-color: #495abb14 !important;
+
+    border-radius: none;
+    /* position: relative; MUST FOR ANIMATION */
 }
 
-.infoGrid{
-    margin-bottom: 30px;
+.Item p {
+    color: white !important;
+}
+
+.Item h1 {
+    color: #5f76fc !important;
+}
+
+.WhatIsCryptoContainer {
+    background: none !important;
+    border: none;
+}
+
+.WhatIsCryptoContainer h1 {
+    color: #495abb !important;
+}
+
+.WhatIsCryptoContainer p {
+    color: white;
 }
 
 .infoItem {
     background: none !important;
-    margin-top: 50px !important;
+
     margin-bottom: 80px !important;
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+
+    margin-left: 100px;
+    margin-right: 100px;
+
+    border-radius: 0% !important;
+    border-top: 1px solid #3f51b5 !important;
+    border-bottom: 1px solid #3f51b5 !important;
 }
 
-.span {
-    font-size: 70px;
+.About span {
+    font-size: 65px;
     line-height: 100%;
     font-weight: 600;
     letter-spacing: -.04em;
     padding-left: 300px;
-    color: #467df9;
+    color: #495abb;
     float: left;
 
     margin-top: -20px;
 }
 
 .paragraph {
-    color: rgb(203, 231, 255);
-    padding-right: 300px;
+    color: white;
+    padding-right: 150px;
 
     margin: 0%;
 }
@@ -57,7 +89,8 @@
     width: 40px;
 }
 
-.ListItem {
+.ListItem{
+    color:  white !important;
     text-align: left;
     font-size: 18px;
 }
@@ -67,11 +100,7 @@ p {
 }
 
 #AboutLearnMoreButton { 
-    background-color: #495abb;
-}
-
-#test {
-    color:  red !important;
+    background-color: #3f51b5; 
 }
 
 #onClickDiv {
@@ -103,3 +132,104 @@ p {
 .About h4 {
     color: #495abb;
 }
+
+ul {
+    list-style: none;
+}
+
+.About ul li::before {
+    content: "\2022";
+    color: #5f76fc;
+    font-weight: bold; 
+    display: inline-block;
+    width: 1em;
+}
+
+/* -------------------------------------------------------------------------------------------------------------- */
+/* ANIMATION */
+/* .Item::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 2px solid transparent;
+}
+.Item:hover::before {
+    animation: animate 0.5s linear forwards;
+}
+@keyframes animate {
+    0% {
+        width: 0;
+        height: 0;
+        border-top-color: #495abb;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+ 
+    50% {
+        width: 100%;
+        height: 0;
+        border-top-color: #495abb;
+        border-right-color: #495abb;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+ 
+    100% {
+        width: 100%;
+        height: 100%;
+        border-top-color: #495abb;
+        border-right-color: #495abb;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+}
+
+.Item::after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 2px solid transparent;
+}
+ 
+.Item:hover::after {
+    animation: animates 0.5s linear forwards;
+}
+ 
+@keyframes animates {
+    0% {
+        width: 0;
+        height: 0;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: #495abb;
+    }
+ 
+    50% {
+        width: 0;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: #495abb;
+        border-left-color: #495abb;
+    }
+ 
+    100% {
+        width: 100%;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: #495abb;
+        border-left-color: #495abb;
+    }
+} */
+/* -------------------------------------------------------------------------------------------------------------- */

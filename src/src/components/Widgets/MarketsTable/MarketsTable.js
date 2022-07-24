@@ -8,11 +8,6 @@ import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import "./MarketsTable.css";
 
-import Button from '@mui/material/Button';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
-
-
 function MarketsTable(prop) {
   const [value, setValue] = useState([]);
 
@@ -103,12 +98,16 @@ function MarketsTable(prop) {
                     ></img>
                   </TableCell>
                   <TableCell>{data.name}</TableCell>
-                  <TableCell>{data.current_price} $</TableCell>
-                  <TableCell>
+                  <TableCell>$ {data.current_price.toLocaleString()}</TableCell>
+                  {/* <TableCell>
                     {data.price_change_percentage_24h.toFixed(2)} %
-                  </TableCell>
-                  <TableCell>{data.high_24h}</TableCell>
-                  <TableCell>${data.market_cap} M</TableCell>
+                  </TableCell> */}
+                    {data.price_change_percentage_24h.toFixed(2) < 0 && <TableCell id="BellowPercent">{data.price_change_percentage_24h.toFixed(2)} %</TableCell>}
+                    {data.price_change_percentage_24h.toFixed(2) > 0 && <TableCell id="AbovePercent">{data.price_change_percentage_24h.toFixed(2)} %</TableCell>}
+                    {data.price_change_percentage_24h.toFixed(2) == 0 && <TableCell id="AbovePercent">{data.price_change_percentage_24h.toFixed(2)} %</TableCell>}
+
+                  <TableCell>{data.high_24h.toLocaleString()} M</TableCell>
+                  <TableCell>${data.market_cap.toLocaleString()} M</TableCell>
                   <TableCell>
                     <a href="/crypto-details">Detail</a>
                   </TableCell>
